@@ -15,6 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <jakarta.jakartaee-api.version>8.0.0</jakarta.jakartaee-api.version>
+        <microprofile.microprofile-health-api>3.0</microprofile.microprofile-health-api>
     </properties>
 
     <dependencies>
@@ -22,6 +23,12 @@
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-api</artifactId>
             <version>${jakarta.jakartaee-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.microprofile.health</groupId>
+            <artifactId>microprofile-health-api</artifactId>
+            <version>${microprofile.microprofile-health-api}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
